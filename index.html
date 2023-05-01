@@ -10,51 +10,62 @@
 </head>
 <body>
     <!-- Header section -->
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <div>
-                <a class="navbar-brand">Complex UI</a>
-                <a href="#" class="section">Section 1</a>
-                <a href="#" class="section">Section 2</a>
-                <a href="#" class="section">Section 3</a>
-            </div>
-            <div>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-            </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Complex UI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link">Section 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Section 2</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link">Section 3</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
+    
 
       <!-- Carousel section -->
       <div id="carouselExampleCaptions" class="carousel slide">
-        <!-- <div class="carousel-indicators">
+        <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div> -->
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./pic-1.jpg" class="d-block w-100" alt="...">
+            <img src="./Images/pic-1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First Slide Title</h5>
+              <h5>First slide Title</h5>
               <p>First Slide Description</p>
               <button type="button" class="btn btn-primary">Call to Action</button>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./pic-2.jpg" class="d-block w-100" alt="...">
+            <img src="./Images/pic-2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second Slide Title</h5>
+              <h5>Second slide Title</h5>
               <p>Second Slide Description</p>
               <button type="button" class="btn btn-primary">Call to Action</button>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./pic-3.jpg" class="d-block w-100" alt="...">
+            <img src="./Images/pic-3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third Slide Title</h5>
+              <h5>Third slide Title</h5>
               <p>Third Slide Description</p>
               <button type="button" class="btn btn-primary">Call to Action</button>
             </div>
@@ -71,104 +82,133 @@
       </div>
 
       <!-- Custom flex Div -->
-      <div class="custom">
-        <div class="card" style="width: 18rem;">
-            <img src="./pic-1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Short Description.</p>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <img src="./pic-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Short Description.</p>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <img src="./pic-3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Short Description.</p>
-            </div>
-          </div>
+      <div class="container img-wrap my-5 flex-sm-wrap flex-md-nowrap">
+        <div class="container">
+          <img src="./Images/pic-1.jpg" class="d-block w-100" alt="img-1">
+          <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quae quis dolorum eius quaerat, sunt commodi neque quibusdam facere odio asperiores nulla, amet ipsum quos temporibus perspiciatis soluta quasi. In.</p>
+        </div>
+        <div class="container">
+          <img src="./Images/pic-2.jpg" class="d-block w-100" alt="img-2">
+          <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas a modi ratione vero soluta iste in aperiam, accusamus dolorem fuga laboriosam molestiae nam pariatur porro fugiat accusantium dolorum et sint.</p>
+        </div>
+        <div class="container">
+          <img src="./Images/pic-3.jpg" class="d-block w-100" alt="img-3">
+          <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur excepturi voluptas, totam id doloribus laborum molestiae facilis cum sapiente quam atque architecto ullam enim. Nobis sequi vel nulla? Atque, reiciendis!</p>
+        </div>
       </div>
 
       <!-- Photos-Gallery section -->
-      <div class="grid-container">
-            <div class="grid-item">
-                <img src="./pic-1.jpg">
+      <div class="container my-5">
+        <div class="row g-3 p-2">
+          <div class="col">
+            <img src="./Images/pexels-людмила-шалимова-16511744.jpg" class="img-fluid" alt="img-2">
+          </div>
+          <div class="col">
+            <div class="row mb-4">
+              <div class="col">
+                <img src="./Images/pexels-людмила-шалимова-16511744.jpg" class="img-fluid" alt="img-2">
+              </div>
+              <div class="col">
+                <img src="./Images/pexels-людмила-шалимова-16511744.jpg" class="img-fluid" alt="img-2">
+              </div>
             </div>
-            <div class="grid-item">
-                <img src="./pic-2.jpg">
+            <div class="row mb-4">
+              <div class="col">
+                <img src="./Images/pexels-людмила-шалимова-16511744.jpg" class="img-fluid" alt="img-2">
+              </div>
+              <div class="col">
+                <img src="./Images/pexels-людмила-шалимова-16511744.jpg" class="img-fluid" alt="img-2">
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <img src="./Images/pexels-людмила-шалимова-16511744.jpg" class="img-fluid" alt="img-2">
+          </div>
+        </div>
+        <div class="row g-3 p-2">
+          <div class="col-4">
+            <img src="./Images/pexels-людмила-шалимова-16511744.jpg" class="img-fluid" alt="img-2">
+          </div>
+          <div class="col-8">
+            <img src="./Images/pic-2.jpg" class="img-fluid" alt="img-2">
+          </div>
+        </div>
       </div>
 
       <!-- Card section -->
-      <div class="card-section">
-
-        <div class="card" style="width: 18rem;">
-            <img src="./pic-1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Call to Action</a>
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-4 col-sm-12 mb-sm-4 mb-lg-0">
+            <div class="card">
+              <img src="./Images/pic-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Call to Action</a>
+              </div>
             </div>
           </div>
-
-          <div class="card" style="width: 18rem;">
-            <img src="./pic-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Call to Action</a>
+          <div class="col col-lg-4 col-sm-12 mb-sm-4 mb-lg-0">
+            <div class="card">
+              <img src="./Images/pic-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Call to Action</a>
+              </div>
             </div>
           </div>
-
-          <div class="card" style="width: 18rem;">
-            <img src="./pic-3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Call to Action</a>
+          <div class="col col-lg-4 col-sm-12 mb-sm-4 mb-lg-0">
+            <div class="card">
+              <img src="./Images/pic-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Call to Action</a>
+              </div>
             </div>
           </div>
+        </div>
       </div>
 
       <!-- Footer section -->
-      <div class="main-footer">
-        <div class="container">
-            <div class="info">
-                <h5>Useful Links</h5>
-                <div><a href="#">Link 1</a></div>
-                <div><a href="#">Link 2</a></div>
-                <div><a href="#">Link 3</a></div>
+      <div class="container-fluid bg-light">
+        <div class="container mt-5 py-5">
+          <div class="row my-4">
+            <div class="col">
+              <h3>Useful Links</h3>
+              <div class="d-flex flex-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
             </div>
-            <div class="info">
-                <h5>More Links</h5>
-                <div><a href="#">Link 1</a></div>
-                <div><a href="#">Link 2</a></div>
-                <div><a href="#">Link 3</a></div>
+            <div class="col">
+              <h3>More Links</h3>
+              <div class="d-flex flex-column">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
             </div>
-            <div class="info">
-                <h5>Contact Us</h5>
-                <div>Email: example@example.com</div>
-                <br>
-                <div>Phone: +1 (555) 123-4567</div>
-            </div>
-          </div>
-          
-          <div class="bottom-footer">
-            <div class="rights">@ 2023 Complex UI, All Rights Reserved.</div>
-
-            <div>
-                <a href="#" class="btn btn-primary">Back to Top</a>
+            <div class="col">
+              <h3>Contact Us</h3>
+              <p>Email: example@example.com</p>
+              <p>Phone Number: 9881xxxx65</p>
             </div>
           </div>
+          <div class="row">
+            <div class="col">
+              <span>&#169;</span> 2023 Complex UI. All rights reserved.
+            </div>
+            <div class="col">
+              <a class="btn btn-primary float-end" href="#navbar">Back to Top</a>
+            </div>
+          </div>
+        </div>
       </div>      
 
 
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
 </html>
